@@ -11,6 +11,8 @@ Match assets from kenney.nl
 
 Sound Effects from freesound.org
 
+Music is Commedia Oppositorum by Edward Shallow via freemusicarchive.org
+
 ## References
 None
 
