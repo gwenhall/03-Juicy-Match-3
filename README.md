@@ -1,8 +1,8 @@
 
-# Project Name
-Context and date
+# Project 03 Juicy Match 3
+Project 03 for the SP21 section of MSCH-C220
 
-Description
+Juicy take on a classic match-3 format.
 
 ## Implementation
 Which features you included
