@@ -1,9 +1,12 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Grid/grid.gd" type="Script" id=1]
 [ext_resource path="res://Pieces/Piece Background.tscn" type="PackedScene" id=2]
 [ext_resource path="res://UI/HUD.gd" type="Script" id=3]
 [ext_resource path="res://Assets/FredokaOne-Regular.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://UI/Camera.gd" type="Script" id=5]
+[ext_resource path="res://Assets/Edward Shallow - Commedia OppositorumWAV.wav" type="AudioStream" id=6]
+[ext_resource path="res://Assets/matchsound1.wav" type="AudioStream" id=7]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 4 )
@@ -12,11 +15,11 @@ font_data = ExtResource( 4 )
 
 [node name="grid" type="Node2D" parent="."]
 script = ExtResource( 1 )
-width = 4
-height = 5
-xStart = 96
+width = 7
+height = 10
+xStart = 80
 yStart = 832
-offset = 128
+offset = 70
 background = ExtResource( 2 )
 
 [node name="HUD" type="Control" parent="."]
@@ -28,10 +31,36 @@ __meta__ = {
 }
 
 [node name="Score" type="Label" parent="HUD"]
-margin_right = 576.0
-margin_bottom = 20.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 586.0
+margin_bottom = 30.0
 custom_fonts/font = SubResource( 1 )
 text = "Score: "
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Time" type="Label" parent="HUD"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 550.0
+margin_bottom = 30.0
+custom_fonts/font = SubResource( 1 )
+text = "Time:"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Camera" type="Camera2D" parent="."]
+anchor_mode = 0
+current = true
+script = ExtResource( 5 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 6 )
+autoplay = true
+
+[node name="Match" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
