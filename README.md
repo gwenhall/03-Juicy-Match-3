@@ -5,7 +5,11 @@ Project 03 for the SP21 section of MSCH-C220
 Juicy take on a classic match-3 format.
 
 ## Implementation
-Which features you included
+Typeface -- Fredoka One Regular from fonts.google.com
+
+Match assets from kenney.nl
+
+Sound Effects from freesound.org
 
 ## References
 None
