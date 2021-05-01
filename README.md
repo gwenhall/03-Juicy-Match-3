@@ -1,2 +1,17 @@
-# 03-Juicy-Match-3
-Project 03 for MSCH-C220
+
+# Project Name
+Context and date
+
+Description
+
+## Implementation
+Which features you included
+
+## References
+None
+
+## Future Development
+None
+
+## Created by
+Gwen Hall
